@@ -4,18 +4,13 @@
   * [nvm](https://github.com/creationix/nvm) -- Mac or Linux.
   * [nvm-windows](https://github.com/coreybutler/nvm-windows) -- Windows.
 
-**Step 2**: Install global dependencies. Execute these commands anywhere in the command line
-  * [Webpack](https://github.com/webpack/webpack) -- Module bundler
-
-```shell
-$ npm install -g webpack
-```
-**Step 3**: Install project dependencies.
+**Step 2**: Install project dependencies.
 
 ```shell
 $ npm install
 ```
-**Step 4**: Start the dev server
+
+**Step 3**: Start the dev server
 
 ```shell
 $ npm start
