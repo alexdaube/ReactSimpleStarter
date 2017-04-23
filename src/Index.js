@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {createStore, applyMiddleware} from "redux";
 import { anchorate } from 'anchorate';
 import { Provider } from "react-redux";
-import { Router, browserHistory } from 'react-router';
+import { BrowserRouter as Router} from 'react-router-dom';
 import reduxThunk from 'redux-thunk';
 
 
@@ -19,9 +19,8 @@ function onUpdate () {
 
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
-        <Router
-            onUpdate={onUpdate}
-            history={browserHistory}
-            routes={routes}/>
+        <Router>
+            {routes}
+        </Router>
     </Provider>,
     document.getElementById('app'));
